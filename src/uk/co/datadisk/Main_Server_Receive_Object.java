@@ -23,6 +23,8 @@ public class Main_Server_Receive_Object {
                 callFromClient();
             }
 
+            in.close();
+
         } catch (IOException e) {
             System.out.println("Server exception " + e.getMessage());
         } catch (ClassNotFoundException e) {
