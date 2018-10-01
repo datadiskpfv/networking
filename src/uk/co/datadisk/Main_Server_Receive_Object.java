@@ -11,6 +11,7 @@ public class Main_Server_Receive_Object {
 
         try (ServerSocket serverSocket = new ServerSocket(5000)) {
 
+            System.out.println("Waiting for objects......");
             Socket s = serverSocket.accept();
             ObjectInputStream in = new ObjectInputStream(s.getInputStream());
             Employee emp1 = (Employee) in.readObject();
@@ -33,6 +34,6 @@ public class Main_Server_Receive_Object {
     }
 
     public static void callFromClient() {
-        System.out.println("This was called by the client");
+        System.out.println("This was called by the client (bit of a hack (use: RMI, RPC or REST");
     }
 }
