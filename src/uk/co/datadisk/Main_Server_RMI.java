@@ -9,7 +9,7 @@ public class Main_Server_RMI extends UnicastRemoteObject implements RMIInterface
     private static final long serialVersionUID = 1L;
 
     protected Main_Server_RMI() throws RemoteException {
-        super();
+        super(5000);            // specify port
     }
 
     @Override
