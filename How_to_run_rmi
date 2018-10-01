@@ -1,0 +1,14 @@
+
+add C:\java_projects\networking\out\production\networking to classpath
+
+open cmd window (server)
+-----------------------------------------------
+cd C:\java_projects\networking\src
+start rmiregistry                       ## should get a blank cmd window opening
+java uk.co.datadisk.Main_Server_RMI     ## should say "Server ready"
+
+
+open new cmd window (client)
+-----------------------------------------------
+cd C:\java_projects\networking\src
+java uk.co.datadisk.Main_Client_RMI
